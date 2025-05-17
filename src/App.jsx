@@ -1,9 +1,9 @@
-import Body from './components/Body'
+import LandingPage from './components/LandingPage'
 import React from 'react'
 function App() {
   return (
     <main>
-      <Body />
+      <LandingPage />
     </main>
   )
 }

@@ -2,10 +2,9 @@ import React from "react";
 import EmailIcon from "./svgs/Email";
 import WhatsappIcon from "./svgs/WhatsApp";
 
-function Body() {
+function LandingPage() {
   return (
     <section className="relative w-screen h-screen bg-black overflow-hidden">
-
       <div
         className="absolute inset-0 animate-pulse [animation-duration:10s] bg-repeat bg-center  bg-cover z-0 opacity-10 "
         style={{ backgroundImage: "url('/Images/thundor.png')" }}
@@ -29,12 +28,12 @@ function Body() {
 
       <div className="flex text-white flex-col text-3xl gap-4 items-center justify-center h-full z-[9999]">
         <div className="w-full text-center">
-          <span className="tracking-wide ">Let’s Connect...</span>
+          <span className="tracking-wide animate-pulse [animation-duration:5s] ">Let’s Connect...</span>
         </div>
 
         <div className="w-full z-[9999] h-fit flex items-center gap-4 justify-center">
           <a
-            href="nikdevcloud@gmail.com"
+            href="mailto:nikdevcloud@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className="transition transform hover:scale-110 hover:drop-shadow-[0_0_6px_rgba(0,123,255,0.8)]"
@@ -42,7 +41,7 @@ function Body() {
             <EmailIcon color="white" height="40px" width="40px" />
           </a>
           <a
-            href="https://wa.me/+9177477815466"
+            href="https://wa.me/917477815466?text=Hi%20Nik%2C%20I'm%20reaching%20out%20regarding%20app%20development"
             target="_blank"
             rel="noopener noreferrer"
             className="transition transform hover:scale-110 hover:drop-shadow-[0_0_6px_rgba(37,211,102,0.8)]"
@@ -59,7 +58,7 @@ function Body() {
         <p className="mt-2 text-sm text-gray-400 uppercase">Don’t hesitate</p>
       </div>
 
-      <div className="absolute bottom-4 left-4 right-4 flex justify-between text-xs font-mono text-gray-500 uppercase tracking-widest z-10">
+      <div className="absolute  bottom-4 left-4 right-4 flex justify-between xs:text-[10px] md:text-[10px] sm:text-[10px] text-[10px] font-mono text-gray-500 uppercase tracking-widest z-10">
         <div>
           quality assessment: <span className="text-green-400">active</span>
         </div>
@@ -71,4 +70,4 @@ function Body() {
   );
 }
 
-export default Body;
+export default LandingPage;
